@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +12,24 @@
 </head>
 <body>
     <section id = "signup">
-        <h1>Sign Up</h1>
+        <h2>Sign Up</h2>
         <form id = "signup-form">
             <input type = "text" class = "short" name = "first" placeholder="First Name">
-            <input type = "text" class = "short" name = "last" placeholder="Last Name"> <br>
-            <input type = "text" class = "long" name = "mobile" placeholder="Mobile No.">
-            <input type = "text" class = "long" name = "email" placeholder="Email Address">
+            <input type = "text" class = "short" name = "last" placeholder="Last Name"> 
+            <input type = "text" class = "grid-col-span-2" name = "mobile" placeholder="Mobile No.">
+            <input type = "text" class = "grid-col-span-2" name = "email" placeholder="Email Address">
+            <input type = "text" class = "short" name = "password" placeholder="Password">
+            <input type = "text" class = "short" name = "confirmPassword" placeholder="Confirm Password">
+            <section class = "grid-col-span-2" id="terms">
+                <label>
+                    <input type = "checkbox" name="terms-checkbox">
+                    <label class="bold-text">I Agree</label>
+                    </input>
+                </label>
+                <label for = "terms-checkbox" id="terms-desc">By Clicking <button disabled id="terms-button" >Register</button>, you agree to the <a href = "">Terms and Conditions</a> set out by this site, including our Cookie Use.</label>
+            </section>
+            <button id="register-button" >Register</button>
+            <button id="signin-button">Sign In</button>
         </form>
     </section>
 </body>
