@@ -1,0 +1,14 @@
+#signup {
+    margin: 40vh;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.long {
+    width: 100%;
+    box-sizing:border-box;
+}
