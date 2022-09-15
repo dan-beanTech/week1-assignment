@@ -13,23 +13,23 @@
 <body>
     <section id = "signup">
         <h2>Sign Up</h2>
-        <form id = "signup-form">
-            <input type = "text" class = "short" name = "first" placeholder="First Name">
-            <input type = "text" class = "short" name = "last" placeholder="Last Name"> 
+        <form id = "signup__form">
+            <input type = "text" name = "first" placeholder="First Name">
+            <input type = "text" name = "last" placeholder="Last Name"> 
             <input type = "text" class = "grid-col-span-2" name = "mobile" placeholder="Mobile No.">
             <input type = "text" class = "grid-col-span-2" name = "email" placeholder="Email Address">
-            <input type = "text" class = "short" name = "password" placeholder="Password">
-            <input type = "text" class = "short" name = "confirmPassword" placeholder="Confirm Password">
-            <section class = "grid-col-span-2" id="terms">
+            <input type = "text" name = "password" placeholder="Password">
+            <input type = "text" name = "confirmPassword" placeholder="Confirm Password">
+            <section class = "grid-col-span-2" id="signup__form__terms">
                 <label>
                     <input type = "checkbox" name="terms-checkbox">
                     <label class="bold-text">I Agree</label>
                     </input>
                 </label>
-                <label for = "terms-checkbox" id="terms-desc">By Clicking <button disabled id="terms-button" >Register</button>, you agree to the <a href = "">Terms and Conditions</a> set out by this site, including our Cookie Use.</label>
+                <label for = "terms-checkbox" id="signup__form__termsdesc">By Clicking <button disabled class="btn" id="terms-button" >Register</button>, you agree to the <a href = "">Terms and Conditions</a> set out by this site, including our Cookie Use.</label>
             </section>
-            <button id="register-button" >Register</button>
-            <button id="signin-button">Sign In</button>
+            <button class="btn btn--register" >Register</button>
+            <button class="btn btn--singup">Sign In</button>
         </form>
     </section>
 </body>
